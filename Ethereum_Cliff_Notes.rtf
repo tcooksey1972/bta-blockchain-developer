@@ -1,0 +1,108 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset161 Calibri;}{\f2\fnil Calibri;}{\f3\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red0\green0\blue255;}
+{\*\generator Riched20 10.0.17134}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9\par
+The components of an open, public blockchain are (usually):\par
+
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 A peer-to-peer (P2P) network connecting participants and propagating transactions and blocks of verified transactions, based on a standardized "gossip" protocol\par
+{\pntext\f3\'B7\tab}Messages, in the form of transactions, representing state transitions\par
+{\pntext\f3\'B7\tab}A set of consensus rules, governing what constitutes a transaction and what makes for a valid state transition\par
+{\pntext\f3\'B7\tab}A state machine that processes transactions according to the consensus rules\par
+{\pntext\f3\'B7\tab}A chain of cryptographically secured blocks that acts as a journal of all the verified and accepted state transitions\par
+{\pntext\f3\'B7\tab}A consensus algorithm that decentralizes control over the blockchain, by forcing participants to cooperate in the enforcement of the consensus rules\par
+{\pntext\f3\'B7\tab}A game-theoretically sound incentivization scheme (e.g., proof-of-work costs plus block rewards) to economically secure the state machine in an open environment\par
+{\pntext\f3\'B7\tab}One or more open source software implementations of the above ("clients")\par
+
+\pard\sa200\sl276\slmult1 Ethereum Refrences\par
+
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 The Ethereum Yellow Paper: {{\field{\*\fldinst{HYPERLINK https://ethereum.github.io/yellowpaper/paper.pdf }}{\fldrslt{https://ethereum.github.io/yellowpaper/paper.pdf\ul0\cf0}}}}\f0\fs22\par
+{\pntext\f3\'B7\tab}The Beige Paper, a rewrite of the Yellow Paper for a broader audience in less formal language: {{\field{\*\fldinst{HYPERLINK https://github.com/chronaeon/beigepaper }}{\fldrslt{https://github.com/chronaeon/beigepaper\ul0\cf0}}}}\f0\fs22\par
+{\pntext\f3\'B7\tab}\'d0\f1\lang1032\'ceVp2p network protocol: {{\field{\*\fldinst{HYPERLINK http://bit.ly/2quAlTE }}{\fldrslt{http://bit.ly/2quAlTE\ul0\cf0}}}}\f1\fs22\par
+{\pntext\f3\'B7\tab}Ethereum Virtual Machine list of resources: {{\field{\*\fldinst{HYPERLINK http://bit.ly/2PmtjiS }}{\fldrslt{http://bit.ly/2PmtjiS\ul0\cf0}}}}\f1\fs22\par
+{\pntext\f3\'B7\tab}LevelDB database (used most often to store the local copy of the blockchain): {{\field{\*\fldinst{HYPERLINK http://leveldb.org }}{\fldrslt{http://leveldb.org\ul0\cf0}}}}\f1\fs22\par
+{\pntext\f3\'B7\tab}Merkle Patricia trees: {{\field{\*\fldinst{HYPERLINK https://github.com/ethereum/wiki/wiki/Patricia-Tree }}{\fldrslt{https://github.com/ethereum/wiki/wiki/Patricia-Tree\ul0\cf0}}}}\f1\fs22\par
+{\pntext\f3\'B7\tab}Ethash PoW algorithm: {{\field{\*\fldinst{HYPERLINK https://github.com/ethereum/wiki/wiki/Ethash }}{\fldrslt{https://github.com/ethereum/wiki/wiki/Ethash\ul0\cf0}}}}\f1\fs22\par
+{\pntext\f3\'B7\tab}Casper PoS v1 Implementation Guide: {{\field{\*\fldinst{HYPERLINK http://bit.ly/2DyPr3l }}{\fldrslt{http://bit.ly/2DyPr3l\ul0\cf0}}}}\f1\fs22\par
+{\pntext\f3\'B7\tab}Go-Ethereum (Geth) client: {{\field{\*\fldinst{HYPERLINK https://geth.ethereum.org/ }}{\fldrslt{https://geth.ethereum.org/\ul0\cf0}}}}\f1\fs22\par
+{\pntext\f3\'B7\tab}Parity Ethereum client: {{\field{\*\fldinst{HYPERLINK https://parity.io/ }}{\fldrslt{https://parity.io/\ul0\cf0}}}}\f0\fs22\lang9\par
+
+\pard\sa200\sl276\slmult1\par
+
+\pard\sa200\sl276\slmult1\par
+Current Ethereum Client list, Language and current release version.\par
+{{\field{\*\fldinst{HYPERLINK http://ethdocs.org/en/latest/ethereum-clients/choosing-a-client.html#why-are-there-multiple-ethereum-clients }}{\fldrslt{http://ethdocs.org/en/latest/ethereum-clients/choosing-a-client.html#why-are-there-multiple-ethereum-clients\ul0\cf0}}}}\f0\fs22\par
+Basic properties of a cryptographic hash function\par
+\b Determinism\b0 -A given input message always produces the same hash output.\par
+\b Verifiability\b0 -Computing the hash of a message is efficient (linear complexity).\par
+\b Noncorrelation\b0 -A small change to the message (e.g., a 1-bit change) should change the hash output so extensively that it cannot be correlated to the hash of the original message.\par
+\b Irreversibility\b0 -Computing the message from its hash is infeasible, equivalent to a brute-force search through all possible messages.\par
+\b Collision protection\b0 -It should be infeasible to calculate two different messages that produce the same hash output.\par
+\par
+\ul\b Solidity\ulnone\b0\par
+Data types\par
+
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Boolean (bool)-\b0 Boolean value, true or false, with logical operators ! (not), && (and), || (or), == (equal), and != (not equal).\par
+{\pntext\f3\'B7\tab}\b Integer (int, uint)-\b0 Signed (int) and unsigned (uint) integers, declared in increments of 8 bits from int8 to uint256. Without a size suffix, 256-bit quantities are used, to match the word size of the EVM.\par
+{\pntext\f3\'B7\tab}\b Fixed point (fixed, ufixed)-\b0 Fixed-point numbers, declared with (u)fixedMxN where M is the size in bits (increments of 8 up to 256) and N is the number of decimals after the point (up to 18); e.g., ufixed32x2.\par
+{\pntext\f3\'B7\tab}\b Address\b0 -A 20-byte Ethereum address. The address object has many helpful member functions, the main ones being balance (returns the account balance) and transfer (transfers ether to the account).\par
+{\pntext\f3\'B7\tab}\b Byte array (fixed)-\b0 Fixed-size arrays of bytes, declared with bytes1 up to bytes32.\par
+{\pntext\f3\'B7\tab}\b Byte array (dynamic)-\b0 Variable-sized arrays of bytes, declared with bytes or string.\par
+{\pntext\f3\'B7\tab}\b Enum\b0 -User-defined type for enumerating discrete values: enum NAME \{LABEL1, LABEL 2, ...\}.\par
+{\pntext\f3\'B7\tab}\b Arrays\b0 -An array of any type, either fixed or dynamic: uint32[][5] is a fixed-size array of five dynamic arrays of unsigned integers.\par
+{\pntext\f3\'B7\tab}\b Struct\b0 -User-defined data containers for grouping variables: struct NAME \{TYPE1 VARIABLE1; TYPE2 VARIABLE2; ...\}.\par
+{\pntext\f3\'B7\tab}\b Mapping\b0 - Hash lookup tables for key => value pairs: mapping(KEY_TYPE => VALUE_TYPE) NAME.  In addition to these data types, Solidity also offers a variety of value literals that can be used to calculate different units:\par
+{\pntext\f3\'B7\tab}\b Time units\b0 - The units seconds, minutes, hours, and days can be used as suffixes, converting to multiples of the base unit seconds.\par
+{\pntext\f3\'B7\tab}\b Ether units\b0 -The units wei, finney, szabo, and ether can be used as suffixes, converting to multiples of the base unit wei.\par
+
+\pard\sa200\sl276\slmult1\ul\b Predifined Global Variables and Functions\ulnone\b0\par
+\b Transaction/message call context- \b0 The msg object is the transaction call (EOA originated) or message call (contract originated) that launched this contract execution. It contains a number of useful attributes:\par
+\b msg.sender- \b0 We\rquote ve already used this one. It represents the address that initiated this contract call, not necessarily the originating EOA that sent the transaction. If our contract was called directly by an EOA transaction, then this is the address that signed the transaction, but otherwise it will be a contract address.\par
+\b msg.value-\b0 The value of ether sent with this call (in wei).\par
+\par
+\b msg.gas- \b0 The amount of gas left in the gas supply of this execution environment. This was deprecated in Solidity v0.4.21 and replaced by the gasleft function.\par
+\par
+\b msg.data-\b0 The data payload of this call into our contract.\par
+\par
+\b msg.sig-\b0 The first four bytes of the data payload, which is the function selector.\par
+Whenever a contract calls another contract, the values of all the attributes of msg change to reflect the new caller\rquote s information. The only exception to this is the delegatecall function, which runs the code of another contract/library within the original msg context.\par
+\par
+\b Transaction context- \b0 The tx object provides a means of accessing transaction-related information:\par
+\par
+\b tx.gasprice-\b0 The gas price in the calling transaction.\par
+\par
+\b tx.origin-\b0 The address of the originating EOA for this transaction. WARNING: unsafe!\par
+\par
+\b Block context-\b0 The block object contains information about the current block:\par
+\par
+\b block.blockhash(__blockNumber__)-\b0 The block hash of the specified block number, up to 256 blocks in the past. Deprecated and replaced with the blockhash function in Solidity v0.4.22.\par
+\par
+\b block.coinbase-\b0 The address of the recipient of the current block\rquote s fees and block reward.\par
+\par
+\b block.difficulty- \b0 The difficulty (proof of work) of the current block.\par
+\par
+\b block.gaslimit-\b0 The maximum amount of gas that can be spent across all transactions included in the current block.\par
+\par
+\b block.number- \b0 The current block number (blockchain height).\par
+\par
+\b block.timestamp-\b0 The timestamp placed in the current block by the miner (number of seconds since the Unix epoch).\par
+\b address object-\b0 Any address, either passed as an input or cast from a contract object, has a number of attributes and methods:\par
+\par
+\b address.balance-\b0 The balance of the address, in wei. For example, the current contract balance is address(this).balance.\par
+\b address.transfer(__amount__)- \b0 Transfers the amount (in wei) to this address, throwing an exception on any error.\par
+\b address.send(__amount__)-\b0 Similar to transfer, only instead of throwing an exception, it returns false on error. WARNING: always check the return value of send.\par
+\b address.call(__payload__)-\b0 Low-level CALL function\f2\emdash can construct an arbitrary message call with a data payload. Returns false on error. WARNING: unsafe\emdash recipient can (accidentally or maliciously) use up all your gas, causing your contract to halt with an OOG exception; always check the return value of call.\par
+\b address.callcode(__payload__)\f0\lang1033 -\b0\f2\lang9 Low-level CALLCODE function, like address(this).call(...) but with this contract\rquote s code replaced with that of address. Returns false on error. WARNING: advanced use only!\par
+\b address.delegatecall()\f0\lang1033 - \b0\f2\lang9 Low-level DELEGATECALL function, like callcode(...) but with the full msg context seen by the current contract. Returns false on error. WARNING: advanced use only!\par
+\ul\b\par
+Built-in functions\ulnone\b0\par
+Other functions worth noting are:\par
+\b addmod, mulmod\f0\lang1033 - \b0\f2\lang9 For modulo addition and multiplication. For example, addmod(x,y,k) calculates (x + y) % k.\par
+\b keccak256, sha256, sha3, ripemd160\f0\lang1033 - \b0\f2\lang9 Functions to calculate hashes with various standard hash algorithms.\par
+\b ecrecover\f0\lang1033 - \b0\f2\lang9 Recovers the address used to sign a message from the signature.\par
+\b selfdestrunct(__recipient_address__)\f0\lang1033 - \b0\f2\lang9 Deletes the current contract, sending any remaining ether in the account to the recipient address.\par
+\b this\f0\lang1033 - \b0\f2\lang9 The address of the currently executing contract account.\f0\par
+\ul\b Tools\ulnone\b0\par
+Comprehensive list of Dev tools. w/links {{\field{\*\fldinst{HYPERLINK https://github.com/ConsenSys/ethereum-developer-tools-list }}{\fldrslt{https://github.com/ConsenSys/ethereum-developer-tools-list\ul0\cf0}}}}\f0\fs22\par
+\par
+}
+ 
